@@ -15,7 +15,7 @@ void draw(){
     for(int y = 0; y < rows; y++){
       stroke(255);
       noFill();
-      rect(x*scl, y*scl, scl, scl);
+      rect(x * scl, y * scl, scl, scl);
     }
   }
 }
