@@ -17,6 +17,7 @@ void draw(){
     beginShape(TRIANGLE_STRIP);
     for(int x = 0; x < cols; x++){
       vertex(x * scl, y * scl);
+      vertex(x * scl, (y + 1) * scl);
     }
     endShape();
   }
