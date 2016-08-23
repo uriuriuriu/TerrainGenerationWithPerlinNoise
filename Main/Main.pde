@@ -11,7 +11,7 @@ void setup() {
   terrain = new float [cols][rows];
   for(int y = 0; y < rows; y++){
     for(int x = 0; x < cols; x++){
-      terrain[x][y] = random(-10, 10);
+      terrain[x][y] = map(noise(x, y), 0, 1, -30, 30);
     }
   }
 }
