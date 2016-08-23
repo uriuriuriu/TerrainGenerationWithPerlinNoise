@@ -3,13 +3,19 @@ int scl = 20;
 int w = 1200;
 int h = 900;
 float[][] terrain;
+float flying = 0;
 
 void setup() {
   size(600, 600, P3D);
   cols = w / scl;
   rows = h / scl;
   terrain = new float [cols][rows];
-  float yoff = 0;
+}
+
+void draw(){
+  flying += 0.01;
+  
+  float yoff = flying;
   for(int y = 0; y < rows; y++){
     float xoff = 0;
     for(int x = 0; x < cols; x++){
@@ -18,9 +24,8 @@ void setup() {
     }
     yoff += 0.2;
   }
-}
 
-void draw(){
+
   background(0);
   stroke(255);
   noFill();
