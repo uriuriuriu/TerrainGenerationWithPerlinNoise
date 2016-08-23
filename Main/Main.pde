@@ -28,6 +28,14 @@ void draw(){
 
   background(0);
   stroke(255);
+
+  fill(255, 255);
+  textSize(25);
+  textAlign(CENTER);
+  text("noise(10, 100) => " + noise(10, 100), 300, 60);
+  text("random(10, 100) => ", 230, 90);
+  text(random(10, 100), 420, 90);
+
   noFill();
 
   translate(width/2, height/2);
