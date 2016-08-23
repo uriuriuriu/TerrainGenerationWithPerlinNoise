@@ -9,10 +9,14 @@ void setup() {
   cols = w / scl;
   rows = h / scl;
   terrain = new float [cols][rows];
+  float yoff = 0;
   for(int y = 0; y < rows; y++){
+    float xoff = 0;
     for(int x = 0; x < cols; x++){
-      terrain[x][y] = map(noise(x, y), 0, 1, -30, 30);
+      terrain[x][y] = map(noise(xoff, yoff), 0, 1, -30, 30);
+      xoff += 0.1;
     }
+    yoff += 0.1;
   }
 }
 
