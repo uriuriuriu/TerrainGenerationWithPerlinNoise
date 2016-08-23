@@ -1,7 +1,7 @@
 int cols, rows;
 int scl = 20;
-int w = 1200;
-int h = 900;
+int w = 2000;
+int h = 1600;
 float[][] terrain;
 float flying = 0;
 
@@ -28,14 +28,6 @@ void draw(){
 
   background(0);
   stroke(255);
-
-  fill(255, 255);
-  textSize(25);
-  textAlign(CENTER);
-  text("noise(10, 100) => " + noise(10, 100), 300, 60);
-  text("random(10, 100) => ", 230, 90);
-  text(random(10, 100), 420, 90);
-
   noFill();
 
   translate(width/2, height/2);
