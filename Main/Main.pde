@@ -13,8 +13,8 @@ void setup() {
 }
 
 void draw(){
-  flying += 0.01;
-  
+  flying -= 0.01;
+
   float yoff = flying;
   for(int y = 0; y < rows; y++){
     float xoff = 0;
